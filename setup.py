@@ -4,6 +4,7 @@ from typing import List
 HYPEN_E_DOT='-e.'
 
 def get_requirements(file_path:str) -> List[str]:
+    #this function will return the list of requirements
     requirements = []
     with open(file_path) as file_obj:
         requirements= file_obj.readlines()
@@ -14,7 +15,7 @@ def get_requirements(file_path:str) -> List[str]:
     return requirements
 
 setup(
-    name= 'Fault_Detection',
+    name= 'ML Project',
     version= '0.0.1',
     author='arju',
     author_mail= 'arjufaujdar23@gmail.com',
